@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: Roboto, sans serif;
+        font-size: 16px;
+        box-sizing: border-box;
+      }
+
+      /* body {
+        margin: 0 15px;
+      } */
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 56px;
+        padding: 0 16px;
+        box-shadow: 0 0 2px 0 rgb(210, 210, 210);
+      }
+
+      .logoContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        height: 38px;
+      }
+
+      .searchBoxContainer {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        flex-direction: row;
+        min-width: 800px;
+      }
+
+      .iconsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        min-width: 200px;
+      }
+      .logo {
+        width: 6rem;
+        height: auto;
+      }
+      .search {
+        height: 38px;
+        width: 35rem;
+        border-radius: 50px 0 0 50px;
+        border: 1px solid rgb(207, 207, 207);
+        border-right: 0px;
+        padding: 0 4px 0 16px;
+        box-sizing: border-box;
+      }
+
+      .search:focus-within {
+        border: 0.2px solid rgb(171, 188, 255);
+      }
+
+      .searchBtn {
+        height: 38px;
+        width: 60px;
+        border-radius: 0 50px 50px 0;
+        cursor: pointer;
+        border: 1px solid rgb(220, 220, 220);
+        background-color: rgb(245, 245, 245);
+      }
+      .voice {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        height: 38px;
+        width: 40px;
+        border: 0;
+        margin: 0 0 0 10px;
+        background-color: rgb(247, 247, 247);
+        cursor: pointer;
+      }
+
+      .voice:hover {
+        background-color: rgb(207, 207, 207);
+      }
+
+      .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        cursor: pointer;
+        /* padding: 10px; */
+        height: 38px;
+        width: 40px;
+      }
+      .hamburger:hover {
+        background-color: rgb(236, 236, 236);
+        border: 0;
+        border-radius: 50px;
+      }
+
+      .logoDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 38px;
+      }
+
+      .voice,
+      .profileContainer .material-symbols-outlined {
+        font-variation-settings: "FILL" 1, "wght" 500, "GRAD" 0, "opsz" 48;
+      }
+
+      .uploadVideoContainer,
+      .notificationContainer .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 48;
+      }
+
+      .profileContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0px solid rgb(255, 174, 174);
+        border-radius: 50px;
+        height: 38px;
+        width: 38px;
+        background-color: rgb(228, 228, 228);
+      }
+
+      .uploadVideoContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 38px;
+        width: 38px;
+      }
+
+      .notificationContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 38px;
+        width: 38px;
+      }
+
+      .heroUnit {
+        width: 100%;
+        height: 50vh;
+        background-image: url(heroUnit.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <!-- This is Division 1-->
+      <div class="logoContainer">
+        <div class="hamburger">
+          <span class="material-symbols-outlined"> menu </span>
+        </div>
+        <div class="logoDiv">
+          <img src="youtubeLogo.png" class="logo" alt="" />
+        </div>
+      </div>
+
+      <!-- This is Division 1-->
+      <div class="searchBoxContainer">
+        <form action="">
+          <input type="search" class="search" placeholder="Search" />
+        </form>
+        <button class="searchBtn">
+          <span class="material-symbols-outlined"> search </span>
+        </button>
+        <button class="voice">
+          <span class="material-symbols-outlined"> mic </span>
+        </button>
+      </div>
+      <div class="iconsContainer">
+        <div class="uploadVideoContainer">
+          <span class="material-symbols-outlined"> video_call </span>
+        </div>
+        <div class="notificationContainer">
+          <span class="material-symbols-outlined"> notification_add </span>
+        </div>
+        <button class="profileContainer">
+          <span class="material-symbols-outlined"> person </span>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <div class="heroUnit"></div>
+    </main>
+  </body>
+</html>
